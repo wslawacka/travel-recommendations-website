@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2.4rem;
+    background-color: #ffffffe8;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    padding: 0.4rem 1rem;
+    border-radius: 0.1rem;
+    transition: background-color 0.2s;
+}
+
+nav ul li a:hover {
+    background-color: #54bdb7b0;
+}
+
+nav ul li a:active {
+    background-color: #9ad7d4ba;
+}
+
+body {
+    background-image: url(./bled.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Helvetica, Arial, sans-serif;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0;
+    gap: 2rem;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main p {
+    width: 44rem;
+    font-size: 1.1rem;
+}
+
+#searchContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+#searchContainer button, #searchContainer input {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.1rem;
+}
+
+#searchContainer button {
+    background-color: #9ad7d4;
+    border: none;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+#searchContainer button:hover {
+    background-color: #6eddd7;
+}
+
+#searchContainer button:active {
+    background-color: #78d7d2b9;
+}
+
+#searchContainer input {
+    width: 20rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+
+#searchContainer input:focus {
+    outline: 0.1rem solid rgba(0, 0, 0, 0.4);
+}

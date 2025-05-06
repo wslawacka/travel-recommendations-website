@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhereNext</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #searchContainer {
+            visibility: hidden;
+        }
+        #contactForm {
+            display: flex;
+            flex-direction: column;
+            background-color: #f9f9f9;
+            border-radius: 0.1rem;
+            gap: 1rem;
+            padding: 1.8rem 4.8rem;
+        }
+        input, textarea {
+            font-size: 0.9rem;
+            border: 0.1rem solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.1rem;
+            padding: 0.4rem;
+        }
+        textarea {
+            resize: none;
+        }
+        input:focus, textarea:focus {
+            outline: 0.1rem solid rgba(0, 0, 0, 0.4);
+        }
+        button[type="submit"] {
+            border-radius: 0.1rem;
+            padding: 0.4rem;
+            font-size: 0.9rem;
+            border: none;
+            width: 6rem;
+            align-self: center;
+            background-color: rgb(147, 201, 207);
+            cursor: pointer;
+            margin-top: 0.8rem;
+            transition: background-color 0.2s;
+        }
+        button[type="submit"]:hover {
+            background-color: rgb(184, 214, 218);
+        }
+        button[type="submit"]:active {
+            background-color: rgb(134, 208, 218);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>WhereNext</h1>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div id="searchContainer">
+            <input type="text" placeholder="Enter a destination or keyword">
+            <button>Search</button>
+            <button>Clear</button>
+        </div>
+    </nav>
+    <main>
+        <h1>Contact Us</h1>
+        <p style="text-align: center;">Get in touch.</p>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email">
+            <textarea id="message" placeholder="Enter your message" rows="5" cols="30"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+</body>
+</html>

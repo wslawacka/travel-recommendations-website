@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhereNext</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        #searchContainer {
+            visibility: hidden;
+        }
+        #team {
+            backdrop-filter: blur(0.6rem);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 4rem;
+            padding: 2rem;
+        }
+        #team h2 {
+            font-size: 1.9rem;
+        }
+        .person {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            text-align: center;
+        }
+        .person p {
+            width: 16rem;
+        }
+        .person-role {
+            padding: 0.4rem;
+            background-color: rgba(179, 246, 254, 0.861);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>WhereNext</h1>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <div id="searchContainer">
+            <input type="text" placeholder="Enter a destination or keyword">
+            <button>Search</button>
+            <button>Clear</button>
+        </div>
+    </nav>
+    <main>
+        <h1>About us</h1>
+        <p>At WhereNext, we're passionate explorers, storytellers and tech enthusiasts who believe that every traveler deserves personalized adventures. Our platform was born from a simple idea: make discovering your next destination as inspiring and effortless as the journey itself.</p>
+        <div id="team">
+            <h2 style="text-align: center;">Our<br>Team</h2>
+            <div class="person">
+                <h3 class="person-name">John Doe</h3>
+                <p class="person-description">John Doe is responsible for...</p>
+                <p class="person-role">CEO</p>
+            </div>
+            <div class="person">
+                <h3 class="person-name">Anne Bond</h3>
+                <p class="person-description">Anne Bond is responsible for...</p>
+                <p class="person-role">Team Lead</p>
+            </div>
+            <div class="person">
+                <h3 class="person-name">Mike Tysen</h3>
+                <p class="person-description">Mike Tysen is responsible for...</p>
+                <p class="person-role">Delivery Head</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
