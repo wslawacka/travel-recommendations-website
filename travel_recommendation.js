@@ -18,12 +18,21 @@ function searchForRecommendations() {
         for (const recommendation of recommendations) {
             const recommendationDiv = document.createElement('div');
             const recommendationTitle = document.createElement('h3');
-            recommendationTitle.textContent = recommendation.name;
             const recommendationImg = document.createElement('img');
-            recommendationImg.setAttribute('src', recommendation.imageUrl);
             recommendationImg.classList.add('recommendationImg');
             const recommendationDescription = document.createElement('p');
-            recommendationDescription.textContent = recommendation.description;
+
+            if (searchInput === 'countries') {
+                const cityIndex = Math.floor(Math.random() * recommendation.cities.length);
+                console.log(recommendation.name, cityIndex);
+                recommendationTitle.textContent = recommendation.cities[cityIndex].name;
+                recommendationImg.setAttribute('src', recommendation.cities[cityIndex].imageUrl);
+                recommendationDescription.textContent = recommendation.cities[cityIndex].description;
+            } else {
+                recommendationTitle.textContent = recommendation.name;
+                recommendationImg.setAttribute('src', recommendation.imageUrl);
+                recommendationDescription.textContent = recommendation.description;
+            }
 
             recommendationDiv.appendChild(recommendationImg);
             recommendationDiv.appendChild(recommendationTitle);
