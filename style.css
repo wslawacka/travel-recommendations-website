@@ -96,3 +96,27 @@ main p {
 #searchContainer input:focus {
     outline: 0.1rem solid rgba(0, 0, 0, 0.4);
 }
+
+#recommendations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3.8rem;
+    background-color: #ffffffba;
+    border-radius: 0.1rem;
+    padding: 2rem 0;
+}
+
+.recommendationImg {
+    height: 18rem;
+    width: 26rem;
+}
+
+.recommendation {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: center;
+}
